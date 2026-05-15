@@ -243,20 +243,20 @@ export default function Index() {
       </section>
 
       {/* ── КАТАЛОГ ── */}
-      <section id="catalog" className="py-24 bg-folk-brown">
+      <section id="catalog" className="py-24 bg-secondary">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle light subtitle="Все костюмы — собственное производство, натуральные материалы">
+          <SectionTitle subtitle="Все костюмы — собственное производство, натуральные материалы">
             Каталог костюмов
           </SectionTitle>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {categories.map((cat, i) => (
               <div key={i}
-                className="bg-folk-dark/40 border border-folk-gold/20 p-7 hover:border-folk-gold/60 hover:bg-folk-dark/70 transition-all duration-300 group cursor-pointer">
+                className="bg-card border border-folk-gold/30 p-7 hover:border-folk-gold hover:shadow-lg transition-all duration-300 group cursor-pointer">
                 <div className="text-4xl mb-4">{cat.icon}</div>
-                <div className="text-folk-gold/50 font-sans text-[10px] uppercase tracking-widest mb-1">{cat.sub}</div>
-                <h3 className="font-serif text-xl text-folk-gold mb-3 group-hover:text-amber-300 transition-colors leading-tight">{cat.title}</h3>
-                <p className="font-sans text-folk-cream/60 text-sm leading-relaxed">{cat.desc}</p>
-                <div className="mt-5 flex items-center gap-2 text-folk-gold/40 group-hover:text-folk-gold transition-colors">
+                <div className="text-folk-gold font-sans text-[10px] uppercase tracking-widest mb-1">{cat.sub}</div>
+                <h3 className="font-serif text-xl text-folk-brown mb-3 group-hover:text-folk-red transition-colors leading-tight">{cat.title}</h3>
+                <p className="font-sans text-muted-foreground text-sm leading-relaxed">{cat.desc}</p>
+                <div className="mt-5 flex items-center gap-2 text-folk-gold/50 group-hover:text-folk-red transition-colors">
                   <span className="font-sans text-xs uppercase tracking-widest">Смотреть модели</span>
                   <Icon name="ArrowRight" size={13} />
                 </div>
@@ -265,7 +265,7 @@ export default function Index() {
           </div>
           <div className="text-center mt-10">
             <a href="https://maskaradboom.ru/shop/" target="_blank" rel="noopener"
-              className="inline-flex items-center gap-2 border-2 border-folk-gold text-folk-gold font-sans font-semibold px-8 py-3 hover:bg-folk-gold hover:text-folk-dark transition-all duration-200">
+              className="inline-flex items-center gap-2 border-2 border-folk-red text-folk-red font-sans font-semibold px-8 py-3 hover:bg-folk-red hover:text-white transition-all duration-200">
               <Icon name="ExternalLink" size={16} />
               Весь каталог на сайте
             </a>
@@ -337,31 +337,31 @@ export default function Index() {
       </section>
 
       {/* ── ОТЗЫВЫ ── */}
-      <section id="reviews" className="py-24 bg-folk-brown">
+      <section id="reviews" className="py-24 bg-folk-cream">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle light subtitle="Что говорят наши покупатели">
+          <SectionTitle subtitle="Что говорят наши покупатели">
             Отзывы клиентов
           </SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {reviews.map((r, i) => (
-              <div key={i} className="bg-folk-dark/40 border border-folk-gold/20 p-8 relative">
-                <div className="absolute top-4 right-6 font-serif text-7xl text-folk-gold/10 leading-none select-none">"</div>
+              <div key={i} className="bg-card border border-folk-gold/30 p-8 relative shadow-sm hover:shadow-md transition-shadow">
+                <div className="absolute top-4 right-6 font-serif text-7xl text-folk-gold/15 leading-none select-none">"</div>
                 <div className="flex mb-4">
                   {Array.from({ length: r.stars }).map((_, j) => (
                     <span key={j} className="text-folk-gold text-base">★</span>
                   ))}
                 </div>
-                <p className="font-sans text-folk-cream/60 leading-relaxed mb-6 text-sm italic">"{r.text}"</p>
+                <p className="font-sans text-muted-foreground leading-relaxed mb-6 text-sm italic">"{r.text}"</p>
                 <div className="border-t border-folk-gold/20 pt-4">
-                  <div className="font-serif text-folk-cream text-lg">{r.name}</div>
-                  <div className="font-sans text-xs text-folk-cream/40 uppercase tracking-wide">{r.city}</div>
+                  <div className="font-serif text-folk-brown text-lg">{r.name}</div>
+                  <div className="font-sans text-xs text-muted-foreground uppercase tracking-wide">{r.city}</div>
                 </div>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
             <a href="https://maskaradboom.ru/reviews/" target="_blank" rel="noopener"
-              className="inline-flex items-center gap-2 border border-folk-gold/40 text-folk-gold/70 font-sans text-sm px-6 py-3 hover:border-folk-gold hover:text-folk-gold transition-colors">
+              className="inline-flex items-center gap-2 border border-folk-gold/50 text-folk-brown font-sans text-sm px-6 py-3 hover:border-folk-red hover:text-folk-red transition-colors">
               <Icon name="ExternalLink" size={15} />
               Все отзывы на сайте
             </a>
@@ -445,9 +445,9 @@ export default function Index() {
       </section>
 
       {/* ── КОНТАКТЫ ── */}
-      <section id="contacts" className="py-24 bg-folk-brown">
+      <section id="contacts" className="py-24 bg-secondary">
         <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle light>Контакты</SectionTitle>
+          <SectionTitle>Контакты</SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
               { icon: "MapPin", title: "Адрес", lines: ["[Укажите город]", "[Улица, дом]", "[Режим работы]"] },
@@ -455,12 +455,12 @@ export default function Index() {
               { icon: "Mail", title: "Почта и соцсети", lines: ["[Email]", "[ВКонтакте / Instagram]"] },
             ].map((c) => (
               <div key={c.title} className="flex flex-col items-center">
-                <div className="w-14 h-14 bg-folk-gold/10 border border-folk-gold/30 flex items-center justify-center mb-5">
-                  <Icon name={c.icon} size={24} className="text-folk-gold" />
+                <div className="w-14 h-14 bg-folk-red/10 border border-folk-red/20 flex items-center justify-center mb-5">
+                  <Icon name={c.icon} size={24} className="text-folk-red" />
                 </div>
-                <h3 className="font-serif text-2xl text-folk-cream mb-3">{c.title}</h3>
+                <h3 className="font-serif text-2xl text-folk-brown mb-3">{c.title}</h3>
                 {c.lines.map((l, i) => (
-                  <p key={i} className="font-sans text-folk-cream/50 text-sm">{l}</p>
+                  <p key={i} className="font-sans text-muted-foreground text-sm">{l}</p>
                 ))}
               </div>
             ))}
@@ -469,25 +469,25 @@ export default function Index() {
       </section>
 
       {/* ── ПОДВАЛ ── */}
-      <footer className="bg-folk-dark border-t border-folk-gold/15">
+      <footer className="bg-folk-brown border-t border-folk-gold/20">
         <div className="pattern-strip h-1" />
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <span className="text-2xl">🌺</span>
             <div>
               <div className="font-serif text-folk-cream text-base leading-none">MaskaradBoom</div>
-              <div className="text-folk-gold text-[10px] font-sans tracking-widest uppercase opacity-50 mt-0.5">Фабрика русских народных костюмов</div>
+              <div className="text-folk-gold text-[10px] font-sans tracking-widest uppercase opacity-60 mt-0.5">Фабрика русских народных костюмов</div>
             </div>
           </div>
           <nav className="flex flex-wrap gap-x-5 gap-y-1 justify-center">
             {navLinks.map((l) => (
               <a key={l.href} href={l.href}
-                className="font-sans text-folk-cream/40 text-xs hover:text-folk-gold transition-colors uppercase tracking-wide">
+                className="font-sans text-folk-cream/50 text-xs hover:text-folk-gold transition-colors uppercase tracking-wide">
                 {l.label}
               </a>
             ))}
           </nav>
-          <div className="font-sans text-folk-cream/25 text-xs">© 2024 MaskaradBoom</div>
+          <div className="font-sans text-folk-cream/30 text-xs">© 2024 MaskaradBoom</div>
         </div>
       </footer>
 

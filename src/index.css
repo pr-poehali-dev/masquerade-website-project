@@ -4,42 +4,42 @@
 
 @layer base {
   :root {
-    --background: 35 30% 96%;
-    --foreground: 20 25% 12%;
+    --background: 36 50% 98%;
+    --foreground: 20 30% 14%;
 
-    --card: 35 25% 93%;
-    --card-foreground: 20 25% 12%;
+    --card: 36 40% 99%;
+    --card-foreground: 20 30% 14%;
 
-    --popover: 35 25% 93%;
-    --popover-foreground: 20 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 30% 14%;
 
-    --primary: 5 65% 32%;
-    --primary-foreground: 35 40% 96%;
+    --primary: 5 60% 38%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 30% 85%;
-    --secondary-foreground: 20 25% 18%;
+    --secondary: 36 35% 92%;
+    --secondary-foreground: 20 30% 18%;
 
-    --muted: 35 20% 88%;
-    --muted-foreground: 20 15% 45%;
+    --muted: 36 25% 93%;
+    --muted-foreground: 20 12% 48%;
 
-    --accent: 40 70% 45%;
-    --accent-foreground: 35 40% 96%;
+    --accent: 40 65% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 40% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 20% 80%;
-    --input: 30 20% 80%;
-    --ring: 5 65% 32%;
+    --border: 35 20% 86%;
+    --input: 35 20% 86%;
+    --ring: 5 60% 38%;
 
     --radius: 0.25rem;
 
-    /* Custom folk colors */
-    --folk-red: 5 72% 30%;
-    --folk-gold: 40 75% 45%;
-    --folk-cream: 38 45% 94%;
-    --folk-brown: 25 35% 22%;
-    --folk-dark: 20 30% 10%;
+    /* Custom folk colors — светлая тема */
+    --folk-red: 5 58% 40%;
+    --folk-gold: 38 70% 48%;
+    --folk-cream: 36 50% 98%;
+    --folk-brown: 22 38% 26%;
+    --folk-dark: 22 35% 18%;
   }
 }
 
